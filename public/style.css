@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f4f4;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+
+.container {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+h1 {
+
+    text-align: center;
+
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+h2 {
+
+    color: #333;
+
+    margin-top: 25px;
+}
+
+
+/* Preset buttons */
+
+.preset-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+button {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* Custom URL */
+
+.custom-feed {
+
+    margin-top: 25px;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+input {
+
+    width: 70%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* Feed title */
+
+#feedTitle {
+
+    margin-top: 30px;
+
+    color: #2563eb;
+}
+
+
+/* Article card */
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+
+    margin-top: 0;
+
+    color: #222;
+}
+
+
+.card .date {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.card p {
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+.card a {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.card a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* Loading */
+
+#loading {
+
+    display: none;
+
+    text-align: center;
+
+    color: #2563eb;
+
+    margin-top: 20px;
+}
+
+
+/* Error */
+
+#error {
+
+    color: #dc2626;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .preset-buttons {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RSS Feed Reader</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>RSS Feed Reader</h1>
+
+        <p class="subtitle">
+            Read the latest articles from RSS feeds
+        </p>
+
+
+        <!-- Preset Feeds -->
+
+        <div class="preset-section">
+
+            <h2>Select a Feed</h2>
+
+            <div class="preset-buttons">
+
+                <button
+                    onclick="loadFeed('https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml')">
+                    NY Times
+                </button>
+
+                <button
+                    onclick="loadFeed('https://feeds.bbci.co.uk/news/rss.xml')">
+                    BBC News
+                </button>
+
+                <button
+                    onclick="loadFeed('https://www.theguardian.com/world/rss')">
+                    The Guardian
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Custom RSS URL -->
+
+        <div class="custom-feed">
+
+            <h2>Custom RSS Feed</h2>
+
+            <input
+                type="url"
+                id="rssUrl"
+                placeholder="Enter RSS feed URL"
+            >
+
+            <button onclick="loadCustomFeed()">
+                Load Feed
+            </button>
+
+        </div>
+
+
+        <!-- Loading -->
+
+        <p id="loading">
+            Loading...
+        </p>
+
+
+        <!-- Error -->
+
+        <p id="error"></p>
+
+
+        <!-- Feed Title -->
+
+        <h2 id="feedTitle"></h2>
+
+
+        <!-- Articles -->
+
+        <div id="feedContainer"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
